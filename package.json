@@ -3,9 +3,9 @@
   "packageManager": "pnpm@10.33.2",
   "displayName": "Prose Quotes",
   "description": "Convert straight quotes/apostrophes to curly quotes/apostrophes (and vice versa) in the current selection or file.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "probablyduncan",
-  "repository": "https://github.com/probablyduncan/prose-quotes-vscode-extension",
+  "repository": "https://github.com/probablyduncan/prose-quotes-vsix",
   "engines": {
     "vscode": "^1.118.0"
   },
