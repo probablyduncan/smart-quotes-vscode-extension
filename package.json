@@ -1,0 +1,56 @@
+{
+  "name": "smart-quotes",
+  "packageManager": "pnpm@10.33.2",
+  "displayName": "Smart Quotes",
+  "description": "Convert straight quotes/apostrophes to curly quotes/apostrophes (and vice versa) in the current selection or file.",
+  "version": "0.0.1",
+  "publisher": "smart-quotes",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "smartQuotes.curl",
+        "title": "Curl",
+        "category": "Smart Quotes"
+      },
+      {
+        "command": "smartQuotes.straighten",
+        "title": "Straighten",
+        "category": "Smart Quotes"
+      },
+      {
+        "command": "smartQuotes.toggle",
+        "title": "Toggle",
+        "category": "Smart Quotes"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "compile": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+    "watch": "pnpm run compile -- --watch --sourcemap",
+    "package": "pnpm run compile -- --minify",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "@types/vscode": "^1.118.0",
+    "esbuild": "^0.20.2",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  }
+}
