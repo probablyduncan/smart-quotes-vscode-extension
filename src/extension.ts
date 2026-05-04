@@ -33,13 +33,13 @@ async function applyFormatter(format: Formatter): Promise<void> {
 
 export function activate(context: vscode.ExtensionContext): void {
 	context.subscriptions.push(
-		vscode.commands.registerCommand("smartQuotes.curl", () =>
+		vscode.commands.registerCommand("proseQuotes.curl", () =>
 			applyFormatter(curl),
 		),
-		vscode.commands.registerCommand("smartQuotes.straighten", () =>
+		vscode.commands.registerCommand("proseQuotes.straighten", () =>
 			applyFormatter(straighten),
 		),
-		vscode.commands.registerCommand("smartQuotes.toggle", () =>
+		vscode.commands.registerCommand("proseQuotes.toggle", () =>
 			applyFormatter(toggle),
 		),
 	);

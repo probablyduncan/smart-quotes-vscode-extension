@@ -1,11 +1,11 @@
 {
-  "name": "smart-quotes",
+  "name": "prose-quotes",
   "packageManager": "pnpm@10.33.2",
-  "displayName": "Smart Quotes",
+  "displayName": "Prose Quotes",
   "description": "Convert straight quotes/apostrophes to curly quotes/apostrophes (and vice versa) in the current selection or file.",
   "version": "0.0.1",
   "publisher": "probablyduncan",
-  "repository": "https://github.com/probablyduncan/smart-quotes-vscode-extension",
+  "repository": "https://github.com/probablyduncan/prose-quotes-vscode-extension",
   "engines": {
     "vscode": "^1.118.0"
   },
@@ -18,19 +18,19 @@
   "contributes": {
     "commands": [
       {
-        "command": "smartQuotes.curl",
+        "command": "proseQuotes.curl",
         "title": "Curl",
-        "category": "Smart Quotes"
+        "category": "Prose Quotes"
       },
       {
-        "command": "smartQuotes.straighten",
+        "command": "proseQuotes.straighten",
         "title": "Straighten",
-        "category": "Smart Quotes"
+        "category": "Prose Quotes"
       },
       {
-        "command": "smartQuotes.toggle",
+        "command": "proseQuotes.toggle",
         "title": "Toggle",
-        "category": "Smart Quotes"
+        "category": "Prose Quotes"
       }
     ]
   },

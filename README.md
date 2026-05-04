@@ -1,4 +1,4 @@
-# Smart Quotes
+# Prose Quotes
 
 A VS Code extension that converts between straight (`"`, `'`) and curly (`“`, `”`, `‘`, `’`) quotes and apostrophes in body text, markdown, and prose.
 
@@ -8,9 +8,9 @@ All three commands operate on the active editor's selection. If no text is selec
 
 | Command | Behavior |
 | --- | --- |
-| `Smart Quotes: Curl` | Converts straight quotes/apostrophes to the correct curly variant. Curly characters are left alone. |
-| `Smart Quotes: Straighten` | Converts curly quotes/apostrophes back to straight. Straight characters are left alone. |
-| `Smart Quotes: Toggle` | If the text contains any straight quotes/apostrophes, curls everything. Otherwise straightens everything. Mirrors the bold/italic toggle behavior in text editors. |
+| `Prose Quotes: Curl` | Converts straight quotes/apostrophes to the correct curly variant. Curly characters are left alone. |
+| `Prose Quotes: Straighten` | Converts curly quotes/apostrophes back to straight. Straight characters are left alone. |
+| `Prose Quotes: Toggle` | If the text contains any straight quotes/apostrophes, curls everything. Otherwise straightens everything. Mirrors the bold/italic toggle behavior in text editors. |
 
 ## Direction rules
 
@@ -24,8 +24,8 @@ When curling:
 No default keybindings are registered to avoid conflicts. To assign your own:
 
 1. Open **Preferences: Open Keyboard Shortcuts** (`Ctrl+K Ctrl+S` / `Cmd+K Cmd+S`).
-2. Search for `Smart Quotes`.
-3. Bind `smartQuotes.curl`, `smartQuotes.straighten`, and `smartQuotes.toggle` to whatever keys you prefer.
+2. Search for `Prose Quotes`.
+3. Bind `proseQuotes.curl`, `proseQuotes.straighten`, and `proseQuotes.toggle` to whatever keys you prefer.
 
 ## Development
 
