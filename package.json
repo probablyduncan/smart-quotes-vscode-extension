@@ -4,9 +4,10 @@
   "displayName": "Smart Quotes",
   "description": "Convert straight quotes/apostrophes to curly quotes/apostrophes (and vice versa) in the current selection or file.",
   "version": "0.0.1",
-  "publisher": "smart-quotes",
+  "publisher": "probablyduncan",
+  "repository": "https://github.com/probablyduncan/smart-quotes-vscode-extension",
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.118.0"
   },
   "categories": [
     "Formatters",
@@ -36,8 +37,8 @@
   "scripts": {
     "vscode:prepublish": "pnpm run package",
     "compile": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
-    "watch": "pnpm run compile -- --watch --sourcemap",
-    "package": "pnpm run compile -- --minify",
+    "watch": "pnpm run compile --watch --sourcemap",
+    "package": "pnpm run compile --minify",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
